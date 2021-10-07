@@ -1,0 +1,23 @@
+RewriteEngine on
+
+
+RewriteRule ^$ media.php?module=home [L]
+RewriteRule ^formulir-pendaftaran\.html$ media.php?module=formulir&id=$1 [L]
+RewriteRule ^simpan-formulir\.html$ media.php?module=simpanformulir&id=$1 [L]
+RewriteRule ^prosedur-pendaftaran\.html$ media.php?module=prosedur&id=$1 [L]
+RewriteRule ^contact-us\.html$ media.php?module=hubungikami&id=$1 [L]
+RewriteRule ^contoh-analisa\.html$ media.php?module=contohanalisa&analisa=$1 [L]
+RewriteRule ^bantuan\.html$ media.php?module=bantuan&id=$1 [L]
+RewriteRule ^data-pendaftaran\.html$ media.php?module=datapendaftaran&id=$1 [L]
+
+RewriteRule ^login\.html$ media.php?module=form_login&id=$1 [L]
+RewriteRule ^register\.html$ media.php?module=register&id=$1 [L]
+RewriteRule ^aksi-register\.html$ media.php?module=aksiregister&id=$1 [L]
+RewriteRule ^alternatif-kriteria\.html$ media.php?module=alternatifkriteria&id=$1 [L]
+RewriteRule ^analisa-members\.html$ media.php?module=analisamembers&analisa=$1 [L]
+
+RewriteRule ^hubungi-aksi\.html$ media.php?module=hubungiaksi&id=$1 [L]
+RewriteRule ^alternatif\.html$ media.php?module=alternatif&id=$1 [L]
+RewriteRule ^kriteria\.html$ media.php?module=kriteria&id=$1 [L]
+
+#Options All -Indexes
